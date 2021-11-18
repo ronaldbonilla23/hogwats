@@ -10,6 +10,7 @@
             <th [width]="80">Photo</th>
             <th>Name</th>
             <th>Patronus</th>
+            <th>Stuednt | Professor</th>
           </tr>
         </thead>
         <tbody>
@@ -29,6 +30,10 @@
             </td>
             <td>
               <h4>{{student.patronus}}</h4>
+            </td>
+            <td >
+              <h4 *ngIf="student.hogwartsStudent == true; else professor" >Student</h4>
+              <ng-template #professor><h4>Professor</h4></ng-template>
             </td>
           </tr>
         </tbody>
