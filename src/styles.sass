@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+$dark:#222828
+$mint:#deeec7
+body
+    background-color: $dark
+    font-family: Arial, Helvetica, sans-serif
+    color: $mint
+h1,h2,h3,h4,h5,h6
+    margin: 5px 0
+.title
+    text-align: center
+.container 
+    width: 940px
+    margin:0 auto
+    display: block
+.column-4
+    display: flex
+    align-content: center
+    justify-content: space-evenly
+
+.card
+    display: flex
+    align-content: center
+    justify-content: flex-start
+    flex-direction: column
+    width: 25%
+    padding:15px
+    margin: 15px
+    h3, h5
+     text-align: center
+    img
+      width: 100%
+
+/** .listcard
+  display: grid
+ 
+  grid-auto-columns: 1fr 
+  grid-template-columns: 1fr 1fr 1fr 1fr 
+  grid-template-rows: 1fr 
+  gap: 20px 20px  **/
+  
+.student-avatar
+    img
+        width: 75px
+        object-fit: cover
+        height:75px
+        object-position: top
+        border-radius: 50%
+        margin: 5px
+        background-color: #1a1c1c
+
+
+.table
+    width: 100%
+    margin: 20px auto
+    border-collapse: collapse
+    border-spacing: 0
+    tr td
+      border-bottom: 1px solid #2f3838
+    th
+      background-color: #1a1c1c
+      padding: 10px 5px
+      
+

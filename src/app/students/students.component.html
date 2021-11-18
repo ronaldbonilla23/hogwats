@@ -1,0 +1,41 @@
+<section>
+  <div class="container">
+    <h1 class="title">{{house | uppercase}}</h1>
+    <div class="listcard">
+      
+      <table class="table">
+        <thead>
+          <tr>
+            
+            <th [width]="80">Photo</th>
+            <th>Name</th>
+            <th>Patronus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr  *ngFor="let student of housemembers;  index as i">
+           <td>
+              <div class="student-avatar">
+                <img [src]="student.image" alt="">
+             </div>
+             </td>
+            
+            
+            <td>
+              <div class="student-label">
+                <h3>{{student.name}}</h3>
+                <h4>{{student.ancestry}}</h4>
+              </div>
+            </td>
+            <td>
+              <h4>{{student.patronus}}</h4>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+    
+    </div>
+  </div>
+</section>
